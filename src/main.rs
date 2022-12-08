@@ -28,7 +28,7 @@ enum Commands {
         /// the guid of the bundle to download
         guid: String
     },
-    /// Downloand example content from Connect
+    /// Download example content from Connect
     #[command(arg_required_else_help = true)]
     Jumpstart {
         /// example content type to download
