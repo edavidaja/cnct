@@ -2,6 +2,12 @@
 
 a "content-first" posit Connect CLI
 
+## install
+
+```bash
+cargo install --git https://github.com/edavidaja/cnct.git
+```
+
 ## what?
 
 `rsconnect-python` features a number of top-level administrative commands:
