@@ -12,7 +12,7 @@ cargo install --git https://github.com/edavidaja/cnct.git
 
 `rsconnect-python` features a number of top-level administrative commands:
 
-```
+```bash
 ❯ rsconnect --help
 Commands:
   add             Define a nickname for a Posit Connect, Posit Cloud, or
@@ -31,7 +31,7 @@ Commands:
 
 Since the command line interface is how we expect many publishers to interact with Connect, we should shift to a _content-first_ CLI:
 
-```
+```bash
 ❯ ./cnct --help  
 
 Usage: cnct <COMMAND>
@@ -47,7 +47,7 @@ Commands:
 
 administrative commands mostly concern interacting with a remote connect server, and so are moved to the `remote` subcommand:
 
-```
+```bash
 ❯ ./cnct remote
 Configure deployment target
 
@@ -65,7 +65,7 @@ Commands:
 
 top-level commands should return information about the most recent deployment when appropriate:
 
-```
+```bash
 cnct/target/debug on  main [!] 
 ❯ ./cnct logs
 Get logs for deployed content
@@ -76,4 +76,3 @@ Options:
   -t, --tail  
   -h, --help  Print help information
 ```
-
